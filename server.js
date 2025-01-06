@@ -16,6 +16,7 @@ app.use(cors());
 
 // Define Routes
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
 
 // Serve static assets
 app.use(express.static(path.join(__dirname, 'public')));
